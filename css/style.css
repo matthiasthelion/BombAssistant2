@@ -1,0 +1,641 @@
+header {
+  background-color: black;
+  color: whitesmoke;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+section {
+  align-items: center;
+  min-width: 375px;
+}
+
+.row {
+  margin: 0px;
+}
+
+#button-row{
+  max-width: 936px;
+  margin: 0 auto !important;
+}
+
+.menu-buttons {
+  width: 100%;
+  height: 2em;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: auto;
+  border:  rgb(128, 128, 128) 2px outset;
+}
+
+#canvas {
+  border: solid 2px black;
+  overflow: auto;
+  max-width: 936px;
+  margin-bottom: 15px;
+}
+
+.module-panel {
+  border: solid 2px black;
+  height: auto;
+  max-height: 226px;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.module-image {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.console {
+  min-height: 30px;
+  /* background-color: black;
+  color: green;
+  font-family: 'Consolas'; */
+  padding: 0.5em 1em;
+  /* border: ridge 2px green;
+  border-radius: 3px; */
+  background-color: lightgray;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.global-setting-container {
+  margin: 0px auto;
+  max-width: 350px;
+}
+
+.global-setting-container div.col {
+  padding: 0px;
+}
+
+.steel-text {
+  background-color: gray;
+  /* font-family: 'Stencil'; */
+  padding: 0.5em 1em;
+}
+
+.steel-button {
+  width: 100%;
+  font-size: 13pt;
+  /* font-family: 'Stencil'; */
+  border:  rgb(128, 128, 128) 2px outset;
+}
+
+.steel-button:active {
+  background-color: lightgrey;
+}
+
+.colour-button {
+  position: relative;
+  border: rgb(128, 128, 128) 2px outset;
+  width: 100%;
+  height: 100%;
+  color: rgb(124, 0, 0);
+  font-weight: bold;
+}
+
+.colour-button-large {
+  height: 70px;
+}
+
+.word-button {
+  min-height: 2em;
+  font-size: 1.5em;
+  margin: 3px 2px;
+}
+
+.selected {
+  background-color: lightgreen;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.circle {
+  border-radius: 100%;
+  background-color: grey;
+  height: 250px;
+  width: 250px;
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  align-items: center;
+  margin: 5px auto;
+}
+
+#top-left-text{
+  position: relative;
+  top: 0.5em;
+  left: 0.5em;
+  font-family: 'Consolas';
+  width: 200px;
+}
+
+/* General Colours */
+.yellow {
+  background-color: yellow;
+}
+
+.yellow.colour-button:active {
+  background-color: rgb(173, 173, 0);
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.blue.colour-button:active {
+  background-color: rgb(0, 0, 199);
+  color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.black.colour-button:active {
+  background-color: rgb(49, 49, 49);
+}
+
+.red {
+  background-color: red;
+}
+
+.red.colour-button:active {
+  background-color: rgb(168, 0, 0);
+}
+
+.white {
+  background-color: whitesmoke;
+}
+
+.white.colour-button:active {
+  background-color: rgb(175, 170, 170);
+}
+
+.green {
+  background-color: green;
+}
+
+.green.colour-button:active {
+  background-color: rgb(0, 94, 0);
+}
+
+.clear {
+  background-color: grey;
+}
+
+.clear.colour-button:active {
+  background-color: rgb(87, 85, 85);
+}
+
+/* Backgrounds */
+.steel-plate {
+  /* background-image: url('../images/module-background.webp');
+  background-repeat: repeat;
+  background-size: cover; */
+  background-color: white;
+  padding: 0px;
+}
+
+/* Bomb Modal Specific */
+#parallel-img {
+  width: 100px;
+}
+
+#battery-display, #strike-display {
+  text-align: center;
+  font-weight: 600;
+  padding: 2px 0;
+}
+
+/* Simple Wires */
+.simple-wire-row {
+  height: 3em;
+}
+
+.simple-wire-row div {
+  padding: 0px;
+  margin: 0px;
+}
+
+.wire {
+  margin: 1em 0.5em !important;
+  visibility: hidden;
+  height: 10px;
+  border: solid black 1px;
+}
+
+/* The Button */
+.the-button {
+  border: 3px outset;
+  font-family: 'Stencil';
+  font-size: 2.5em;
+  color: black;
+}
+
+#button-col{
+  margin-top: -1rem !important;
+}
+
+@media only screen and (max-width: 464px) {
+  .the-button {
+    position: relative;
+    top: -60px;
+    right: -85px;
+    width: 75px;
+    height: 75px;
+    font-size: 10pt;
+  }
+
+  #button-col{
+    margin-top: 0 !important;
+    height: 15px;
+  }
+
+  .colour-button-large{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.coloured-strip {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* Mazes */
+#maze-container{
+  max-width: fit-content;
+}
+
+.maze-square {
+  height: 50px;
+  border: solid 1px rgb(209, 209, 209);
+  padding: 0;
+}
+
+.maze-header {
+  padding: 0;
+  width: 50px;
+}
+
+.maze-sidebar {
+  padding: 0;
+  height: 50px;
+  text-align: right;
+}
+
+#maze {
+  border: solid 3px black;
+  width: 300px;
+  margin: 1em auto;
+}
+
+#svg-canvas {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 10000;
+  margin: 0;
+  pointer-events: none;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Simon Says */
+.simon-square {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  border: black 5px outset;
+}
+
+#simon-red {
+  left: 0;
+  top: 0;
+}
+
+#simon-red:active {
+  background-color: rgb(165, 0, 0);
+}
+
+#simon-blue {
+  right: 0;
+  top: 0;
+}
+
+#simon-blue:active {
+  background-color: rgb(0, 0, 163);
+}
+
+#simon-green {
+  left: 0;
+  bottom: 0;
+}
+
+#simon-green:active {
+  background-color: rgb(0, 80, 0);
+}
+
+#simon-yellow {
+  right: 0;
+  bottom: 0;
+}
+
+#simon-yellow:active {
+  background-color: rgb(179, 179, 0);
+}
+
+#simon-wrapper {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 50% 0;
+  background: #fff;
+  text-align: center;
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#simon-container {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 80%;
+  height: 0;
+  padding: 5% 0;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+@-moz-document url-prefix() {
+  #simon-container {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 55px auto;
+    width: 80%;
+    height: 0;
+    padding: 5% 0;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+  }
+}  
+
+#simon {
+  position: relative;
+  width: 60vw;
+  height: 50vh;
+  max-width: 300px;
+  max-height: 360px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (orientation: landscape) {
+  #simon {
+    width: 40vw;
+    height: 85vh;
+  }
+}
+
+/* Morse Code */
+.morse-container {
+  max-width: 80%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+#morse-input,
+#entered-letters {
+  min-height: 1em;
+}
+
+/* ABC123 */
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-black {
+  color: black;
+}
+
+.border-red {
+  border: outset 2px red;
+}
+
+.border-blue {
+  border: outset 2px blue;
+}
+
+.border-black {
+  border: outset 2px black;
+}
+
+/* Complex Wires */
+.complex-wire{
+  width: 10px;
+  height: 100px;
+  border: solid black 1px;
+  margin: -15px auto;
+}
+
+.complex-wire-column{
+  width: 10px;
+}
+
+.complex-light{
+  border-radius: 100%;
+  border: outset 3px gray;
+  background-color: grey;
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+
+.complex-light-on{
+  border-radius: 100%;
+  background-color: yellow;
+  border: outset 3px rgb(170, 170, 2);
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+
+.complex-star{
+  background-color: grey;
+  height: 25px;
+  width: 25px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.9em;
+  z-index: 10;
+  position: relative;
+}
+
+.complex-words{
+  margin: auto 0;
+}
+
+.white-red{
+  background: repeating-linear-gradient(
+  45deg,
+  white,
+  white 5px,
+  red 5px,
+  red 10px
+)
+}
+
+.white-blue{
+  background: repeating-linear-gradient(
+  45deg,
+  white,
+  white 5px,
+  blue 5px,
+  blue 10px
+)
+}
+
+.red-blue{
+  background: repeating-linear-gradient(
+  45deg,
+  red,
+  red 5px,
+  blue 5px,
+  blue 10px
+)
+}
+
+/* Needy Knob */
+#needy-arrow{
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+}
+
+#needy-container{
+  padding: 0.5em 0;
+  padding-bottom: 1em;
+}
+
+.needy-circle {
+  border-radius: 100%;
+  background-color: grey;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.needy-button {
+  width: 3em;
+  height: 3em;
+  font-size: 13pt;
+  border: whitesmoke 2px outset;
+  font-weight: bold;
+  color: gray;
+}
+
+.needy-button:active {
+  background-color: lightgrey;
+}
+
+.needy-button:disabled{
+  background-color: darkgrey;
+}
+
+.needy-button-selected{
+  color: black;
+  background-color: lightgreen;
+}
+
+/* Who's on First */
+#word-buttons{
+  min-height: 380px;
+}
+
+#eye-container{
+  text-align: center;
+}
+
+.eye-box{
+  width: 20px;
+  max-width: 60px;
+  height: 2em;
+  border: solid 2px black;
+}
+
+#eye-text{
+  background-color: black;
+  color: white;
+  margin: 0;
+  max-width: 120px;
+}
+
+#phase1Go{
+  max-width: 150px;
+}
+
+#wof-words{
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 771px) {
+  .wof-button{
+    font-size: 0.85em !important;
+  }
+}
+
+/* Symbols */
+.symbol-img{
+  width: 40px;
+}
+
+.order-col{
+  max-width: 40px;
+}
+
+#order{
+  min-height: 50px;
+}
+
+.symbol-button:disabled{
+  background-color: rgb(80, 80, 80);
+}
