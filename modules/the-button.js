@@ -166,7 +166,7 @@ class TheButton {
                     </div>
                   </div>
                 </div>
-                <div class="col-6 my-3">
+                <div class="col-6 my-4">
                   <button class="steel-button word-button">Abort</button>
                   <button class="steel-button word-button">Hold</button>
                   <button class="steel-button word-button">Detonate</button>
