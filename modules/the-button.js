@@ -182,9 +182,8 @@ class TheButton {
                       <div class="col yellow coloured-strip">5</div>
                     </div>
                     <div class="row">
-                      <div class="coloured-strip white">
-                        Any other colour: 1
-                      </div>
+                      <div class="col red coloured-strip">1</div>
+                      <div class="col white coloured-strip">1</div>
                     </div>
                   </div>
                 </div>
