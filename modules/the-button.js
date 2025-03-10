@@ -125,7 +125,7 @@ class TheButton {
   draw() {
     console.log('TheButton.draw(): drawing in canvas');
     $('#canvas').html(`
-        <div class="row console" id="instructions">Set batteries and lit indicators, then choose colour and word.</div>
+        <div class="row console" id="instructions">Set batteries and lit indicators, then choose colour and word. Guides for yellow and black buttons are similar.</div>
         <div class="steel-plate container-fluid">
           <div id="top-left-text">
             <p id="top-left-frk" class="m-0">FRK Indicator: </p>
