@@ -72,19 +72,19 @@ class ABC123 {
       case 'red-button':
         if (this.redIndex < this.redSequence.length - 1) {
           this.redIndex++;
-          newContent = this.redSequence[this.redIndex].join(' ');
+          newContent = (this.redIndex + 1) + '. ' + this.redSequence[this.redIndex].join(' ');
         }
         break;
       case 'blue-button':
         if (this.blueIndex < this.blueSequence.length - 1) {
           this.blueIndex++;
-          newContent = this.blueSequence[this.blueIndex].join(' ');
+          newContent = (this.blueIndex + 1) + '. ' + this.blueSequence[this.blueIndex].join(' ');
         }
         break;
       case 'black-button':
         if (this.blackIndex < this.blackSequence.length - 1) {
           this.blackIndex++;
-          newContent = this.blackSequence[this.blackIndex].join(' ');
+          newContent = (this.blackIndex + 1) + '. ' + this.blackSequence[this.blackIndex].join(' ');
         }
         break;
     }
