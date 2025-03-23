@@ -118,14 +118,14 @@ class ABC123 {
               </thead>
               <tbody>
                 <tr>
-                  <td><button class="steel-button border-red abc123-button" id="red-button">${this.redSequence[
+                  <td><button class="steel-button border-red abc123-button" id="red-button">${this.redIndex + '. ' + this.redSequence[
                     this.redIndex
                   ].join(' ')}</button></td>
-                  <td><button class="steel-button border-blue abc123-button" id="blue-button">${this.blueSequence[
+                  <td><button class="steel-button border-blue abc123-button" id="blue-button">${this.blueIndex + '. ' + this.blueSequence[
                     this.blueIndex
                   ].join(' ')}</button></td>
                   <td>
-                    <button class="steel-button border-black abc123-button" id="black-button">${this.blackSequence[
+                    <button class="steel-button border-black abc123-button" id="black-button">${this.blackIndex + '. ' + this.blackSequence[
                       this.blackIndex
                     ].join(' ')}</button>
                   </td>
