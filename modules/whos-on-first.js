@@ -10,7 +10,7 @@ class WhosOnFirst {
       blank: {
         eye: 'middle-right',
         text: `BLANK`,
-        words: 'WAIT, RIGHT, OKAY, MIDDLE, BLANK, PRESS, READY, NOTHING, NO, WHAT, LEFT, UHHH, YES, FIRST'
+        words: 'WAIT, RIGHT, OKAY, MIDDLE, BLANK'
       },
       c: {
         eye: 'top-right',
@@ -39,7 +39,7 @@ class WhosOnFirst {
       },
       hold: {
         text: `HOLD`,
-        words: `YOU ARE, U, DONE, UH UH, YOU, UR, SURE, WHAT?, YOU'RE, NEXT, HOLD, UH HUH, YOUR, LIKE`
+        words: `YOU ARE, U, DONE, UH UH, YOU, UR, SURE, WHAT?, YOU'RE, NEXT, HOLD`
       },
       holdon: {
         eye: 'bottom-right',
@@ -59,38 +59,38 @@ class WhosOnFirst {
       },
       left: {
         text: `LEFT`,
-        words: 'RIGHT, LEFT, FIRST, NO, MIDDLE, YES, BLANK, WHAT, UHHH, WAIT, PRESS, READY, OKAY, NOTHING'
+        words: 'RIGHT, LEFT'
       },
       like: {
         text: `LIKE`,
-        words: `YOU'RE, NEXT, U, UR, HOLD, DONE, UH UH, WHAT?, UH HUH, YOU, LIKE, SURE, YOU ARE, YOUR`
+        words: `YOU'RE, NEXT, U, UR, HOLD, DONE, UH UH, WHAT?, UH HUH, YOU, LIKE`
       },
       middle: {
         text: `MIDDLE`,
-        words: 'BLANK, READY, OKAY, WHAT, NOTHING, PRESS, NO, WAIT, LEFT, MIDDLE, RIGHT, FIRST, UHHH, YES'
+        words: 'BLANK, READY, OKAY, WHAT, NOTHING, PRESS, NO, WAIT, LEFT, MIDDLE'
       },
       next: {
         text: `NEXT`,
-        words: `WHAT?, UH HUH, UH UH, YOUR, HOLD, SURE, NEXT, LIKE, DONE, YOU ARE, UR, YOU'RE, U, YOU`
+        words: `WHAT?, UH HUH, UH UH, YOUR, HOLD, SURE, NEXT`
       },
       no: {
         eye: 'bottom-right',
         text: `NO`,
-        words: 'BLANK, UHHH, WAIT, FIRST, WHAT, READY, RIGHT, YES, NOTHING, LEFT, PRESS, OKAY, NO, MIDDLE'
+        words: 'BLANK, UHHH, WAIT, FIRST, WHAT, READY, RIGHT, YES, NOTHING, LEFT, PRESS, OKAY, NO'
       },
       nothing: {
         eye: 'middle-left',
         text: `NOTHING`,
-        words: 'UHHH, RIGHT, OKAY, MIDDLE, YES, BLANK, NO, PRESS, LEFT, WHAT, WAIT, FIRST, NOTHING, READY'
+        words: 'UHHH, RIGHT, OKAY, MIDDLE, YES, BLANK, NO, PRESS, LEFT, WHAT, WAIT, FIRST, NOTHING'
       },
       okay: {
         eye: 'top-right',
         text: `OKAY`,
-        words: 'MIDDLE, NO, FIRST, YES, UHHH, NOTHING, WAIT, OKAY, LEFT, READY, BLANK, PRESS, WHAT, RIGHT'
+        words: 'MIDDLE, NO, FIRST, YES, UHHH, NOTHING, WAIT, OKAY'
       },
       press: {
         text: `PRESS`,
-        words: 'RIGHT, MIDDLE, YES, READY, PRESS, OKAY, NOTHING, UHHH, BLANK, LEFT, FIRST, WHAT, NO, WAIT'
+        words: 'RIGHT, MIDDLE, YES, READY, PRESS'
       },
       read: {
         eye: 'middle-right',
@@ -98,7 +98,7 @@ class WhosOnFirst {
       },
       ready: {
         text: `READY`,
-        words: 'YES, OKAY, WHAT, MIDDLE, LEFT, PRESS, RIGHT, BLANK, READY, NO, FIRST, UHHH, NOTHING, WAIT'
+        words: 'YES, OKAY, WHAT, MIDDLE, LEFT, PRESS, RIGHT, BLANK, READY '
       },
       red: {
         eye: 'middle-right',
@@ -110,7 +110,7 @@ class WhosOnFirst {
       },
       right: {
         text: `RIGHT`,
-        words: 'YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT, MIDDLE, LEFT, UHHH, BLANK, OKAY, FIRST'
+        words: 'YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT'
       },
       says: {
         eye: 'bottom-right',
@@ -122,7 +122,7 @@ class WhosOnFirst {
       },
       sure: {
         text: `SURE`,
-        words: `YOU ARE, DONE, LIKE, YOU'RE, YOU, HOLD, UH HUH, UR, SURE, U, WHAT?, NEXT, YOUR, UH UH`
+        words: `YOU ARE, DONE, LIKE, YOU'RE, YOU, HOLD, UH HUH, UR, SURE`
       },
       their: {
         eye: 'middle-right',
@@ -142,46 +142,46 @@ class WhosOnFirst {
       },
       u: {
         text: `U`,
-        words: `UH HUH, SURE, NEXT, WHAT?, YOU'RE, UR, UH UH, DONE, U, YOU, LIKE, HOLD, YOU ARE, YOUR`
+        words: `UH HUH, SURE, NEXT, WHAT?, YOU'RE, UR, UH UH, DONE, U`
       },
       uhhh: {
         text: `UHHH`,
-        words: 'READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, UHHH, MIDDLE, WAIT, FIRST'
+        words: 'READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, UHHH'
       },
       uhhuh: {
         text: `UH HUH`,
-        words: `UH HUH, YOUR, YOU ARE, YOU, DONE, HOLD, UH UH, NEXT, SURE, LIKE, YOU'RE, UR, U, WHAT?`
+        words: `UH HUH`
       },
       uhuh: {
         text: `UH UH`,
-        words: `UR, U, YOU ARE, YOU'RE, NEXT, UH UH, DONE, YOU, UH HUH, LIKE, YOUR, SURE, HOLD, WHAT?`
+        words: `UR, U, YOU ARE, YOU'RE, NEXT, UH UH`
       },
       ur: {
         eye: 'top-left',
         text: `UR`,
-        words: `DONE, U, UR, UH HUH, WHAT?, SURE, YOUR, HOLD, YOU'RE, LIKE, NEXT, UH UH, YOU ARE, YOU`
+        words: `DONE, U, UR`
       },
       wait: {
         text: `WAIT`,
-        words: 'UHHH, NO, BLANK, OKAY, YES, LEFT, FIRST, PRESS, WHAT, WAIT, NOTHING, READY, RIGHT, MIDDLE'
+        words: 'UHHH, NO, BLANK, OKAY, YES, LEFT, FIRST, PRESS, WHAT, WAIT'
       },
       what: {
         text: `WHAT`,
-        words: 'UHHH, WHAT, LEFT, NOTHING, READY, BLANK, MIDDLE, NO, OKAY, FIRST, WAIT, YES, PRESS, RIGHT'
+        words: 'UHHH, WHAT'
       },
       whatQ: {
         text: `WHAT?`,
-        words: `YOU, HOLD, YOU'RE, YOUR, U, DONE, UH UH, LIKE, YOU ARE, UH HUH, UR, NEXT, WHAT?, SURE`
+        words: `YOU, HOLD, YOU'RE, YOUR, U, DONE, UH UH, LIKE, YOU ARE, UH HUH, UR, NEXT, WHAT?`
       },
       yes: {
         eye: 'middle-left',
         text: `YES`,
-        words: 'OKAY, RIGHT, UHHH, MIDDLE, FIRST, WHAT, PRESS, READY, NOTHING, YES, LEFT, BLANK, NO, WAIT'
+        words: 'OKAY, RIGHT, UHHH, MIDDLE, FIRST, WHAT, PRESS, READY, NOTHING, YES'
       },
       you: {
         eye: 'middle-right',
         text: `YOU`,
-        words: `SURE, YOU ARE, YOUR, YOU'RE, NEXT, UH HUH, UR, HOLD, WHAT?, YOU, UH UH, LIKE, DONE, U`
+        words: `SURE, YOU ARE, YOUR, YOU'RE, NEXT, UH HUH, UR, HOLD, WHAT?, YOU`
       },
       youare: {
         eye: 'bottom-right',
@@ -191,12 +191,12 @@ class WhosOnFirst {
       your: {
         eye: 'middle-right',
         text: `YOUR`,
-        words: `UH UH, YOU ARE, UH HUH, YOUR, NEXT, UR, SURE, U, YOU'RE, YOU, WHAT?, HOLD, LIKE, DONE`
+        words: `UH UH, YOU ARE, UH HUH, YOUR`
       },
       youre: {
         eye: 'middle-right',
         text: `YOU'RE`,
-        words: `YOU, YOU'RE, UR, NEXT, UH UH, YOU ARE, U, YOUR, WHAT?, UH HUH, SURE, DONE, LIKE, HOLD`
+        words: `YOU, YOU'RE`
       }
     }
   }
