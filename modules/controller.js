@@ -6,18 +6,18 @@ const imageFolder = 'svgModules'  // realModules or svgModules
 
 function reset() {
   $('#canvas').html(` <div class="row">
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-simple-wires" class="module-image" src="./images/${imageFolder}/simple-wires.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-the-button" class="module-image" src="./images/${imageFolder}/button.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-keypad" class="module-image" src="./images/${imageFolder}/keypad.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-simon-says" class="module-image" src="./images/${imageFolder}/simon-says.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-whos-on-first" class="module-image" src="./images/${imageFolder}/whos-on-first.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-memory" class="module-image" src="./images/${imageFolder}/memory.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-morse-code" class="module-image" src="./images/${imageFolder}/morse-code.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-complicated-wires" class="module-image" src="./images/${imageFolder}/complicated-wires.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-abc123" class="module-image" src="./images/${imageFolder}/wire-sequence.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-mazes" class="module-image" src="./images/${imageFolder}/module-maze.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-passwords" class="module-image" src="./images/${imageFolder}/password.${extension}"></div>
-                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-needy-knob" class="module-image" src="./images/${imageFolder}/needy-knob.${extension}"></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-simple-wires" class="module-image" src="./images/${imageFolder}/simple-wires.${extension}"><p>Wires</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-the-button" class="module-image" src="./images/${imageFolder}/button.${extension}"><p>The Button</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-keypad" class="module-image" src="./images/${imageFolder}/keypad.${extension}"><p>Keypad</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-simon-says" class="module-image" src="./images/${imageFolder}/simon-says.${extension}"><p>Simon Says</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-whos-on-first" class="module-image" src="./images/${imageFolder}/whos-on-first.${extension}"><p>Who's On First</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-memory" class="module-image" src="./images/${imageFolder}/memory.${extension}"><p>Memory</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-morse-code" class="module-image" src="./images/${imageFolder}/morse-code.${extension}"><p>Morse Code</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-complicated-wires" class="module-image" src="./images/${imageFolder}/complicated-wires.${extension}"><p>Complicated Wires</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-abc123" class="module-image" src="./images/${imageFolder}/wire-sequence.${extension}"><p>Wire Sequence</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-mazes" class="module-image" src="./images/${imageFolder}/module-maze.${extension}"><p>The Maze</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-passwords" class="module-image" src="./images/${imageFolder}/password.${extension}"><p>Password</p></div>
+                            <div class="col-lg-3 col-md-4 col-6 module-panel"><img id="img-needy-knob" class="module-image" src="./images/${imageFolder}/needy-knob.${extension}"><p>Needy Knob</p></div>
                         </div>`);
   //Assign each image with proper action.
   $('#img-simple-wires').on('click', startSimpleWires);
