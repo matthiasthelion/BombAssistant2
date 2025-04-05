@@ -24,7 +24,7 @@ class TheButton {
     this.button.classList.add(colour);
     this.button.setAttribute('value', colour);
 
-    if (colour === 'blue') this.button.style.color = 'white';
+    if (colour === 'blue' || colour === 'red') this.button.style.color = 'white';
     else this.button.style.color = 'black';
 
     this.colour = colour;
