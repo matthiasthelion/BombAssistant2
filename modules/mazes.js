@@ -6,11 +6,15 @@ class Mazes {
   configurations; // 3D array of possible square configurations. 1D = 9 possible configs, 2D = 36 squares on board, 3D = 4 directions of links (0,1,2,3 = up,down,left,right) + circle boolean
   optimalPath; // List of square tags that makes for the optimal path through maze.
   directions; // List of directions, from white square to red triangle  e.g. ['LEFT', 'UP', 'RIGHT', 'DOWN']
+  shortdir; // List of directions, shortened version
+  dirindex; // Index of directions
   drawTracker; // Tracks what SVG elements have been drawn, used when resizing window.
 
   constructor() {
     this.draw();
     this.directions = [];
+    this.dirindex = [];
+    this.shortdir = [];
     this.squares = this.initSquares();
     this.configurations = this.populateConfigs();
     $('.maze-square').on('click', this.squareSelected);
@@ -550,7 +554,7 @@ class Mazes {
       ).split(',');
       console.log('optimal path', this.optimalPath);
       this.drawPath();
-      this.printDirections(this.directions);
+      this.printDirections(this.shortdir);
       $('#instructions').html(`Follow the directions below.`);
     }
   };
@@ -715,6 +719,7 @@ class Mazes {
       this.drawLine(this.optimalPath[i], this.optimalPath[i + 1]);
       this.addDirection(this.optimalPath[i], this.optimalPath[i + 1]);
     }
+    this.shortdir.push (this.directions[this.directions.length - 1] + this.dirindex[this.dirindex.length-1]);
     this.drawTracker.lines.visible = true;
   };
 
@@ -763,19 +768,28 @@ class Mazes {
   addDirection = (id1, id2) => {
     const currentSquare = this.squares[id1];
 
-    if (currentSquare.up === id2) this.directions.push('UP');
+    if (currentSquare.up === id2) this.directions.push('🡹');
 
-    if (currentSquare.down === id2) this.directions.push('DOWN');
+    if (currentSquare.down === id2) this.directions.push('🡻');
 
-    if (currentSquare.left === id2) this.directions.push('LEFT');
+    if (currentSquare.left === id2) this.directions.push('🡸');
 
-    if (currentSquare.right === id2) this.directions.push('RIGHT');
+    if (currentSquare.right === id2) this.directions.push('🡺');
+
+    if((this.directions.length === 1) || (this.directions[this.directions.length - 1] != this.directions[this.directions.length - 2])) {
+      this.dirindex.push(1);
+      if (this.directions.length > 1) {
+        this.shortdir.push (this.directions[this.directions.length - 2] + this.dirindex[this.dirindex.length-2]);
+      }
+    } else {
+      this.dirindex.push((this.dirindex[this.dirindex.length-1])+1);
+    }
   };
 
   // Prints directions to screen
   printDirections = (directions) => {
     console.log('printDirections', directions);
-    $('#commands').html(`Directions: ${directions.join(', ')}`);
+    $('#commands').html(`Directions: ${directions.join(' ')}`);
   };
 
   draw() {
