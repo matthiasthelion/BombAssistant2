@@ -768,13 +768,13 @@ class Mazes {
   addDirection = (id1, id2) => {
     const currentSquare = this.squares[id1];
 
-    if (currentSquare.up === id2) this.directions.push('↑');
+    if (currentSquare.up === id2) this.directions.push('U');
 
-    if (currentSquare.down === id2) this.directions.push('↓');
+    if (currentSquare.down === id2) this.directions.push('D');
 
-    if (currentSquare.left === id2) this.directions.push('←');
+    if (currentSquare.left === id2) this.directions.push('L');
 
-    if (currentSquare.right === id2) this.directions.push('→');
+    if (currentSquare.right === id2) this.directions.push('R');
 
     if((this.directions.length === 1) || (this.directions[this.directions.length - 1] != this.directions[this.directions.length - 2])) {
       this.dirindex.push(1);
@@ -875,4 +875,5 @@ class Mazes {
       <div class="row console" id="commands">Follow instructions above.</div>`);
   }
 }
+
 
